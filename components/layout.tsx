@@ -7,7 +7,7 @@ import Link from "next/link";
 const name = "Sheikh Salman";
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: any) {
   return (
     <div className={styles.container}>
       <Head>

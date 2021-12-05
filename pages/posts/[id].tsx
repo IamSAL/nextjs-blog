@@ -4,23 +4,24 @@ import Date from "../../components/date";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.css";
 import { useRouter } from "next/router";
+import { GetStaticProps, GetStaticPaths, GetServerSideProps } from "next";
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds();
   return {
     paths,
     fallback: true,
   };
-}
+};
 
-export async function getStaticProps({ params }) {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postData = await getPostData(params.id);
   return {
     props: {
       postData,
     },
   };
-}
+};
 
 export default function Post({ postData }) {
   const router = useRouter();
