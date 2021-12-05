@@ -22,8 +22,12 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi esse
-          voluptatem cumque soluta aperiam commodi.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam
+          autem sit! Minus, praesentium! Nemo beatae voluptatem commodi
+          architecto ut repellat, reiciendis et delectus quisquam pariatur ea
+          fugiat. Nobis possimus repudiandae mollitia saepe tempore cupiditate
+          neque ea sequi error libero, voluptatum exercitationem sit nihil
+          omnis! Voluptas pariatur a officiis quas.
         </p>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
